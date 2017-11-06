@@ -1,2 +1,2 @@
-# jetvillegas.github.com
-jetvillegas.github.com user page contents
+# jetvillegas.github.io
+jetvillegas.github.io user page contents
