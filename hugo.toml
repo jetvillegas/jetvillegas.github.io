@@ -20,17 +20,12 @@ title = "Blog posts"
 url = "/post"
 weight = 1
 
-[[Menus.main]]
-identifier = "gallery"
-name = "Gallery"
-title = "Gallery"
-url = "/gallery"
-weight = 2
 
 [params]
 title = "Jet Villegas"
-description = "Text about my cool site"
-favicon = "/fav.png"
+description = "Digital Product Builder"
+favicon = "images/jet_villegas.jpg" 
+
 useBootstrapCDN = false
 mathjax = false
 animate = true
@@ -43,7 +38,7 @@ animate = true
 
   [params.navbar]
   align = "ms-auto"
-  brandName = "Jet Villegas"
+  brandName = "junglecode"
   disableSearch = false
 
     [params.navbar.stickyNavBar]
@@ -52,25 +47,24 @@ animate = true
 
     [params.navbar.menus]
     disableAbout = false
-    disableExperience = false
-    disableEducation = false
-    disableProjects = false
-    disableAchievements = false
+    disableExperience = true
+    disableEducation = true
+    disableProjects = true
+    disableAchievements = true
     disableContact = false
 
   [params.hero]
   enable = true
-  intro = "Hi, my name is"
-  title = "Jet Villegas."
-  subtitle = "I build things."
-  content = "Good things."
+  intro = "Hello, my name is"
+  title = "Jet Villegas"
+  content = "This is my personal site."
   image = "/images/jet_villegas.jpg"
 
     [params.hero.bottomImage]
     enable = true
 
     [params.hero.button]
-    enable = true
+    enable = false
     name = "Resume"
     url = "#"
     download = true
@@ -91,174 +85,19 @@ url = "https://twitter.com/junglecode"
   title = "About Me"
   image = "/images/jet_villegas.jpg"
   content = """
-I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
+I am a builder, operator, and investor in the technology industry. I’ve worked on many successful commercial and free products: games, tools, runtimes, operating systems, browsers, programming languages, servers, distributed systems, mobile and web applications. I may have code running on your device right now.
 
-I am currently working on a project that will be used to help people find the best way to get around the city."""
+My mission is to advance the human condition via technology. I operate on a global scale with a keen eye for the critical details. If you would like to work with me, I am [often hiring](https://www.linkedin.com/in/jetvillegas/). If you would like me to invest funding or work on your project, please send an [email](mailto:jet@junglecode.com).
+"""
 
     [params.about.skills]
     enable = true
-    title = "Here are a few technologies I've been working with recently:"
-    items = [ "HTML", "CSS", "JavaScript", "React", "Node", "Express" ]
+    title = "Specialties:"
+    items = [ "Product &amp; Engineering Management" , "Interactive Media" , "Graphics" , "Video" , "Sound" ,  "Text" , "Distributed Systems" , "Search" , "Advertising" , "Data Science" , "Security" , "Compilers" , "Debuggers" , "Licensing" , "Browsers" , "Servers" , "Mobile" , "VR" , "Web/Machine" , "Application and System Software" ]
 
-  [params.experience]
-  enable = true
-
-    [[params.experience.items]]
-    job = "Senior Software Developer"
-    company = "Facebook"
-    companyUrl = "https://example.com"
-    date = "Jan 2022 - present"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-      [params.experience.items.featuredLink]
-      enable = true
-      name = "View the project"
-      url = "https://example.com"
-
-    [[params.experience.items]]
-    job = "Software Developer"
-    company = "Amazon"
-    companyUrl = "https://example.com"
-    date = "Sep 2020 - Dec 2021"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-      [params.experience.items.info]
-      enable = true
-      content = "I worked as a software developer for more than one year in Amazon."
-
-    [[params.experience.items]]
-    job = "Junior Software Developer"
-    company = "Apple"
-    companyUrl = "https://example.com"
-    date = "Jan 2020 - Aug 2020"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.info]
-      enable = false
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-    [[params.experience.items]]
-    job = "UI/UX Designer"
-    company = "Netflix"
-    companyUrl = "https://example.com"
-    date = "June 2017 - Nov 2019"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-    [[params.experience.items]]
-    job = "Product Designer"
-    company = "Google"
-    companyUrl = "https://example.com"
-    date = "Feb 2016 - Mar 2017"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-  [params.education]
-  enable = true
-  index = false
-
-    [[params.education.items]]
-    title = "Master of Business Administration"
-    date = "2013 - 2015"
-    GPA = "3.8 out of 5.0"
-    content = """
-Extracurricular Activities
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
-
-      [params.education.items.school]
-      name = "University of California, Berkeley"
-      url = "https://example.org"
-
-    [[params.education.items]]
-    title = "Bachelor of Science in Computer Science"
-    date = "2009 - 2013"
-    GPA = "3.9 out of 5.0"
-    content = """
-I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-- [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-- Face mask detection using a single convolutional neural network.
-
-Extracurricular Activities
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
-
-      [params.education.items.school]
-      name = "Massachusetts Institute of Technology"
-      url = "https://example.org"
-
-      [params.education.items.featuredLink]
-      enable = true
-      name = "My academic record"
-      url = "https://example.com"
-
-    [[params.education.items]]
-    title = "High School"
-    GPA = "4.2 out of 5.0"
-
-      [params.education.items.school]
-      name = "Thomas Jefferson High School for Science and Technology."
-      url = "https://example.org"
-
-      [params.education.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-  [params.achievements]
-  enable = true
-
-    [[params.achievements.items]]
-    title = "Google kickstart runner"
-    content = "I solved all problems with optimal solution."
-    url = "https://example.com"
-    image = "/images/achievment.jpg"
-
-    [[params.achievements.items]]
-    title = "Facebook Hackathon Winner"
-    content = "Developed a product using Artificial Intelligence."
-    image = "/images/achievment.jpg"
-
-    [[params.achievements.items]]
-    title = "Hugo Profile"
-    content = "Developed a theme and getting 1K+ downloads per month."
-    url = "https://github.com/gurusabarish/hugo-profile"
-    image = "/images/achievment.jpg"
-
-    [[params.achievements.items]]
-    title = "Microsoft Imagine Runner"
-    content = "We are developed a product which can help others."
-
-    [[params.achievements.items]]
-    title = "Google Summer of Code"
-    content = "Contributed to a open source project."
-    url = "https://example.com"
 
   [params.projects]
-  enable = true
+  enable = false
 
     [[params.projects.items]]
     title = "Hugo Profile"
@@ -311,24 +150,24 @@ Extracurricular Activities
       url = "https://github.com/gurusabarish/HugoProfileV2"
 
   [params.contact]
-  enable = true
+  enable = false
   content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-  email = "gurusabarisha@gmail.com"
+  email = "jet@junglecode.com"
   btnName = "Mail me"
 
 [params.footer.recentPosts]
-path = "blogs"
+path = "post"
 count = 3
 title = "Recent Posts"
 enable = true
 disableFeaturedImage = false
 
 [params.footer.socialNetworks]
-github = "https://github.com"
-linkedin = "https://linkedin.com"
-twitter = "https://twitter.com"
-instagram = "https://instagram.com"
-facebook = "https://facebook.com"
+github = "https://github.com/jetvillegas"
+linkedin = "https://www.linkedin.com/in/jetvillegas/"
+twitter = "https://twitter.com/junglecode"
+instagram = "https://www.instagram.com/junglecode/"
+
 
   [params.listPages]
   disableFeaturedImage = false
