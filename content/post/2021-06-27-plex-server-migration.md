@@ -22,13 +22,23 @@ url: /2021/06/27/plex-server-migration/
 
 In this post, I describe how to migrate media from one Plex server to a new server installation. The [official Plex documentation](https://support.plex.tv/articles/201370363-move-an-install-to-another-system/) on how to do this leaves out several critical details that I’ll cover here. If you’ve somehow lost the server configuration options from your new install, I’ll show you how to fix that below.
 
-<figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/no_server_options-1024x897.png)</figure>## Prepare the Source Server
+![Plex](/images/no_server_options-1024x897.png)
+
+## Prepare the Source Server
 
 I’m moving from one Linux installation (Ubuntu 18.04.5 LTS) to another (Ubuntu 20.04.2 LTS.) I’m also moving from a bare metal server to a KVM virtual machine but these instructions should work (with some platform-specific adjustments) for your system.
 
 The first thing to do is to sign out of the server you’re migrating from. We’ll call this the *source* server.
 
-<figure class="wp-block-image size-large">![](http://jetvillegas.com/wp-content/uploads/sites/5/2021/06/settings_button.png)<figcaption>Click on the Settings button in Plex to get to the server configuration options.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/sign_out_server-1024x923.png)<figcaption>Click Settings &gt; General &gt; Sign Out on the source server.</figcaption></figure>Next, we’ll stop the Plex Media Server service on the source server. On Linux, you do this with:
+![Plex](/images/settings_button.png)
+
+Click on the Settings button in Plex to get to the server configuration options.
+
+![Plex](/images/sign_out_server-1024x923.png)
+
+Click Settings &gt; General &gt; Sign Out on the source server.
+
+Next, we’ll stop the Plex Media Server service on the source server. On Linux, you do this with:
 
 `$ sudo service plexmediaserver stop`
 
@@ -62,7 +72,8 @@ Check that it’s running OK:
 
 `$ sudo service plexmediaserver status`
 
-<figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/server_status-1024x296.png)<figcaption>If all’s well, you should see it running on the destination server</figcaption></figure>Note where Plex installs itself and its configuration files. On Linux, it’s installed here:
+![Plex](/images/server_status-1024x296.png)If all’s well, you should see it running on the destination server
+Note where Plex installs itself and its configuration files. On Linux, it’s installed here:
 
 Server Config: `/var/lib/plexmediaserver/Library/Application Support/Plex Media Server`
 
@@ -86,7 +97,42 @@ Next, SSH into the destination server:
 
 On your local computer, type `http://localhost:8888/web` on your browser’s address bar to continue.
 
-<figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_first_sign_in-1024x933.png)<figcaption>Sign into the destination server on `localhost` using your Plex email and password.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_friendly_name-1012x1024.jpg)<figcaption>Give your server a friendly name.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_got_it-928x1024.png)<figcaption>After naming your destination server, Plex will offer up options for re-adding your media libraries.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_organize_media-1024x958.png)<figcaption>Click Add Library to start adding back your media files on the destination server.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_organize_media_add_library-1024x745.png)<figcaption>Pick a Library type depending on the files you’re adding back.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_organize_media_add_movies-1024x738.png)<figcaption>Browse for the folder on your destination server that contains the Library’s files.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_organize_media_add_movies_2-1024x797.png)<figcaption>Libraries you add get added to the list that Plex will index and process.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_organize_media_finished-1024x969.jpg)<figcaption>Click Done after you’ve finished adding Libraries.</figcaption></figure><figure class="wp-block-image size-large">![](https://jetvillegas.com/wp-content/uploads/sites/5/2021/06/localhost_8888_organize_media_revealed-717x1024.png)<figcaption>You’ll now see all your media in the Libraries listed below the default ones. </figcaption></figure>- - - - - -
+![Plex](/images/localhost_8888_first_sign_in-1024x933.png)
+
+Sign into the destination server on `localhost` using your Plex email and password.
+
+![Plex](/images/localhost_8888_friendly_name-1012x1024.jpg)
+
+Give your server a friendly name.
+
+![Plex](/images/localhost_8888_got_it-928x1024.png)
+
+After naming your destination server, Plex will offer up options for re-adding your media libraries.
+
+![Plex](/images/localhost_8888_organize_media-1024x958.png)
+
+Click Add Library to start adding back your media files on the destination server.
+
+![Plex](/images/localhost_8888_organize_media_add_library-1024x745.png)
+
+Pick a Library type depending on the files you’re adding back.
+
+![Plex](/images/localhost_8888_organize_media_add_movies-1024x738.png)
+
+Browse for the folder on your destination server that contains the Library’s files.
+
+![Plex](/images/localhost_8888_organize_media_add_movies_2-1024x797.png)
+
+Libraries you add get added to the list that Plex will index and process.
+
+![Plex](/images/localhost_8888_organize_media_finished-1024x969.jpg)
+
+Click Done after you’ve finished adding Libraries.
+
+![Plex](/images/localhost_8888_organize_media_revealed-717x1024.png)
+
+You’ll now see all your media in the Libraries listed below the default ones. 
+- - - - - -
 
 ## Cleaning Up
 
