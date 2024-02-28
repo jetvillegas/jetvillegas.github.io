@@ -57,7 +57,7 @@ animate = true
   enable = true
   intro = "Hello, my name is"
   title = "Jet Villegas"
-  content = "This is my personal site."
+  content = "This is my personal site. "
   image = "/images/jet_villegas.jpg"
 
     [params.hero.bottomImage]
