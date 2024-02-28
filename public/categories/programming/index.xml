@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Jet Villegas</title>
+    <link>http://localhost:57141/categories/Programming/</link>
+    <description>Recent content in Programming on Jet Villegas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Jul 2021 08:59:35 +0000</lastBuildDate>
+    <atom:link href="http://localhost:57141/categories/Programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running the Lucene 8.9.0 Demo on Ubuntu 20.04 LTS</title>
+      <link>http://localhost:57141/2021/07/05/running-the-lucene-8-9-0-demo-on-ubuntu-20-04-lts/</link>
+      <pubDate>Mon, 05 Jul 2021 08:59:35 +0000</pubDate>
+      <guid>http://localhost:57141/2021/07/05/running-the-lucene-8-9-0-demo-on-ubuntu-20-04-lts/</guid>
+      <description>I’ve been teaching people about Search Advertising lately, and I use the Lucene project to demonstrate indexing, searching, relevance, ranking, scoring, and boosting. It’s a little tricky to set up with some gotchas with build and runtime setup. I’m posting here so I can tell students where to look.&#xA;This tutorial assumes a clean Ubuntu Linux 20.04 LTS system. We’ll put developer dependencies into a dev folder on the user’s home directory:</description>
+    </item>
+  </channel>
+</rss>
