@@ -26,6 +26,8 @@ title = "Jet Villegas"
 description = "Digital Product Builder"
 favicon = "/images/jet_villegas.jpg" 
 
+
+
 useBootstrapCDN = false
 mathjax = false
 animate = true
@@ -40,6 +42,7 @@ animate = true
   align = "ms-auto"
   brandName = "junglecode"
   disableSearch = false
+  searchPlaceholder = "Search..."
 
     [params.navbar.stickyNavBar]
     enable = true
