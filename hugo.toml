@@ -57,7 +57,7 @@ animate = true
   enable = true
   intro = "Hello, my name is"
   title = "Jet Villegas"
-  content = "I am a builder and operator based in Tokyo and San. This is my personal site. "
+  content = "I am a builder and operator based in Tokyo and San Francisco. This is my personal site. "
   image = "/images/jet_villegas.jpg"
 
     [params.hero.bottomImage]
